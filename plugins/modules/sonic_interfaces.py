@@ -211,8 +211,8 @@ commands:
 
 
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.argspec.interfaces.interfaces import InterfacesArgs
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.config.interfaces.interfaces import Interfaces
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.argspec.interfaces.interfaces import InterfacesArgs
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.config.interfaces.interfaces import Interfaces
 
 
 def main():

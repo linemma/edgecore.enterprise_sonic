@@ -111,7 +111,7 @@ saved:
   sample: True
 """
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.sonic import edit_config, run_commands
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.sonic import edit_config, run_commands
 from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.config import NetworkConfig, dumps
 
 

@@ -4,7 +4,7 @@
   gather_facts: False
   connection: httpapi
   collections:
-    - dellemc.sonic
+    - edgecore.sonic
   tasks:
     - name: "Test sonic_l2_interfaces merged state"
       sonic_l2_interfaces:

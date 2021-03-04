@@ -12,15 +12,15 @@ calls the appropriate facts gathering function
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.argspec.facts.facts import FactsArgs
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.argspec.facts.facts import FactsArgs
 from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.facts.facts import (
     FactsBase,
 )
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.facts.vlans.vlans import VlansFacts
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.facts.interfaces.interfaces import InterfacesFacts
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.facts.l2_interfaces.l2_interfaces import L2_interfacesFacts
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.facts.l3_interfaces.l3_interfaces import L3_interfacesFacts
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.facts.lag_interfaces.lag_interfaces import Lag_interfacesFacts
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.facts.vlans.vlans import VlansFacts
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.facts.interfaces.interfaces import InterfacesFacts
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.facts.l2_interfaces.l2_interfaces import L2_interfacesFacts
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.facts.l3_interfaces.l3_interfaces import L3_interfacesFacts
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.facts.lag_interfaces.lag_interfaces import Lag_interfacesFacts
 
 
 FACT_LEGACY_SUBSETS = {}

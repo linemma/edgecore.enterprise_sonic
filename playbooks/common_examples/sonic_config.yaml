@@ -3,7 +3,7 @@
   connection: network_cli
   gather_facts: no
   collections:
-     - dellemc.sonic
+     - edgecore.sonic
   tasks:
   - name: "Configure username and password for SONiC device along with 'save'"
     sonic_config:

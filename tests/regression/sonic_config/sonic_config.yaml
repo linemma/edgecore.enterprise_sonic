@@ -8,7 +8,7 @@
     snmp_location: public
     snmp_contact: a2
   collections:
-    - dellemc.sonic
+    - edgecore.sonic
   tasks:
 
     - include: sublevel.yaml 

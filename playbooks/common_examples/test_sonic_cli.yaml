@@ -1,0 +1,17 @@
+- name: "Test SONiC CLI"
+  hosts: datacenter
+  gather_facts: no
+  connection: network_cli
+  collections:
+    - dellemc.enterprise_sonic
+  tasks: 
+  - name: Test SONiC single command add vlan
+    sonic_command:
+       commands: 'sudo config vlan add 123'
+  tasks:
+  - name: Test SONiC single command show version
+    sonic_command:
+       commands: 'show version'
+    register: cmd_op
+  - debug:
+      msg: '{{cmd_op.stdout_lines}}'

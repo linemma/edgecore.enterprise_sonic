@@ -193,8 +193,8 @@ commands:
 
 
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.argspec.vlans.vlans import VlansArgs
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.config.vlans.vlans import Vlans
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.argspec.vlans.vlans import VlansArgs
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.config.vlans.vlans import Vlans
 
 
 def main():

@@ -28,14 +28,14 @@ from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.u
     to_list,
     search_obj_in_list
 )
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.utils.utils import (
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.utils.utils import (
     update_states,
     get_diff,
     normalize_interface_name,
     remove_empties_from_list,
 )
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.facts.facts import Facts
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.sonic import (
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.facts.facts import Facts
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.sonic import (
     to_request,
     edit_config
 )

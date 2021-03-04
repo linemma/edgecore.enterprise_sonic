@@ -5,7 +5,7 @@
   gather_facts: no
   connection: httpapi
   collections:
-    - dellemc.sonic
+    - edgecore.sonic
   tasks:
 
     - include: test_get.yaml 

@@ -4,7 +4,7 @@
   gather_facts: no
   connection: httpapi
   collections:
-    - dellemc.sonic
+    - edgecore.sonic
   
   roles: 
     - sonic_interfaces

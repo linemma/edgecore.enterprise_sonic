@@ -4,7 +4,7 @@
   gather_facts: no
   connection: httpapi
   collections:
-    - dellemc.sonic
+    - edgecore.sonic
   tasks:
   - name: Delete all VLANs
     sonic_vlans:

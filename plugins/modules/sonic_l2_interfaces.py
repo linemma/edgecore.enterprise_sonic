@@ -280,8 +280,8 @@ commands:
 
 
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.argspec.l2_interfaces.l2_interfaces import L2_interfacesArgs
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.config.l2_interfaces.l2_interfaces import L2_interfaces
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.argspec.l2_interfaces.l2_interfaces import L2_interfacesArgs
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.config.l2_interfaces.l2_interfaces import L2_interfaces
 
 
 def main():

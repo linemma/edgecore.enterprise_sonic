@@ -79,7 +79,7 @@ Sample playbooks
       gather_facts: no
       connection: network_cli
       collections:
-        - dellemc.sonic
+        - edgecore.sonic
       tasks:
         - name: Add VLAN entry
           sonic_config:
@@ -102,7 +102,7 @@ Sample playbooks
       gather_facts: no
       connection: httpapi
       collections:
-        - dellemc.sonic
+        - edgecore.sonic
       tasks:
         - name: Perform "PUT" operation to add VLAN network instance
           sonic_api:
@@ -128,7 +128,7 @@ Sample playbooks
       gather_facts: False
       connection: httpapi
       collections:
-        - dellemc.sonic
+        - edgecore.sonic
       tasks:
        - name: "Configuring VLANs"
          sonic_vlans:
@@ -169,22 +169,22 @@ Sample playbooks
     # parameters for connection type httpapi
     ansible_ssh_user: xxxx
     ansible_ssh_pass: xxxx
-    ansible_network_os: dellemc.sonic.sonic
+    ansible_network_os: edgecore.sonic.sonic
     ansible_httpapi_use_ssl=true
     ansible_httpapi_validate_certs=false
 
     # parameters for connection type network_cli
     ansible_ssh_user: xxxx
     ansible_ssh_pass: xxxx
-    ansible_network_os: dellemc.sonic.sonic
+    ansible_network_os: edgecore.sonic.sonic
 
 **inventory.yaml**
 
     [sonic_sw1]
-    sonic_sw1 ansible_host=100.104.28.119 ansible_network_os=dellemc.sonic.sonic
+    sonic_sw1 ansible_host=100.104.28.119 ansible_network_os=edgecore.sonic.sonic
 
     [sonic_sw2]
-    sonic_sw2 ansible_host=100.104.28.120 ansible_network_os=dellemc.sonic.sonic
+    sonic_sw2 ansible_host=100.104.28.120 ansible_network_os=edgecore.sonic.sonic
 
     [sonic_switches]
     sonic_sw1

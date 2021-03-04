@@ -1,0 +1,10 @@
+{
+  "openconfig-interfaces:interface": [
+    {
+      "name": "Vlan100",
+      "config": {
+        "name": "Vlan100"
+      }
+    }
+  ]
+}

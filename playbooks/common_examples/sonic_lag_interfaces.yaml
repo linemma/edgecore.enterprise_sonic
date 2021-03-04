@@ -5,7 +5,7 @@
   gather_facts: no
   connection: httpapi
   collections:
-    - dellemc.sonic
+    - edgecore.sonic
   tasks:
 
   - name: Test sonic_lag_interfaces 'deleted all' in "delete" state

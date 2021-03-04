@@ -4,7 +4,7 @@
   gather_facts: True
   connection: httpapi
   collections:
-    - dellemc.sonic
+    - edgecore.sonic
   tasks:
     - name: "Test gather facts"
       sonic_facts:

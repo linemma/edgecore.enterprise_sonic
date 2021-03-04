@@ -5,7 +5,7 @@
   gather_facts: no
   connection: network_cli
   collections:
-    - dellemc.sonic
+    - edgecore.sonic
   tasks:
 
   - name: Test SONiC single command

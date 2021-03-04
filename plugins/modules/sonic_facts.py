@@ -99,8 +99,8 @@ RETURN = """
 """
 
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.argspec.facts.facts import FactsArgs
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.facts.facts import Facts
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.argspec.facts.facts import FactsArgs
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.facts.facts import Facts
 
 
 def main():

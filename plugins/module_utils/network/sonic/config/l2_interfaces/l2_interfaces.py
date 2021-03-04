@@ -18,7 +18,7 @@ import json
 from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.cfg.base import (
     ConfigBase
 )
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.utils.utils import (
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.utils.utils import (
     get_diff,
     update_states,
     normalize_interface_name
@@ -26,10 +26,10 @@ from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.utils.
 from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.utils import (
     to_list
 )
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.facts.facts import (
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.facts.facts import (
     Facts
 )
-from ansible_collections.dellemc.sonic.plugins.module_utils.network.sonic.sonic import (
+from ansible_collections.edgecore.sonic.plugins.module_utils.network.sonic.sonic import (
     to_request,
     edit_config
 )

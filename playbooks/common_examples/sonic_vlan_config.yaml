@@ -1,0 +1,24 @@
+---
+- name: Ansible resource module example
+  hosts: datacenter
+  gather_facts: False
+  connection: httpapi
+  collections:
+    - dellemc.enterprise_sonic
+  tasks:
+    - name: "Add VLAN"
+      sonic_api:
+        url: data/openconfig-interfaces:interfaces/interface=Vlan100
+        method: "PATCH"
+        status_code: 204
+        body: "{{ lookup('file','add_vlan.txt') }}"
+    - name: "Get VLAN"
+      sonic_api:
+        url: data/openconfig-interfaces:interfaces/interface=Vlan100
+        method: "GET"
+        status_code: 200
+    - name: "Delete VLAN"
+      sonic_api:
+        url: data/openconfig-interfaces:interfaces/interface=Vlan100
+        method: "DELETE"
+        status_code: 204
